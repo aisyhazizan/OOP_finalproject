@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help - WordHaven Dictionary</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background-color: #EBDEF0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #D7BDE2;
+      padding: 20px;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .container h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .container p, .container h2, .container ul {
+      text-align: left;
+      color: #666;
+    }
+
+    .container p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .container h2 {
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    .container ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .container ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .container button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #333;
+      color: #f2f2f2;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .container button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Help</h1>
+    <p>Here you can find help and support for using the WordHaven Dictionary.</p>
+
+    <h2>FAQ</h2>
+    <ul>
+      <li><strong>How can I hear the pronunciation of a word?</strong><br>
+      Click on the audio icon and the audio pronunciation will play automatically.</li>
+      <br>
+      <li><strong>Why do some words have multiple pronunciations listed in the definition but only one audio pronunciation?</strong><br>
+      In many cases where there are multiple variant pronunciations, only the first, most common variant is offered in audio format.</li>
+      <br>
+      <li><strong>Why are some words missing from the dictionary?</strong><br>
+      Words that are rare or used only in specific situations might not be included in a smaller dictionary, but they could be found in a larger, more comprehensive dictionary.</li>
+      <br>
+      <li><strong>If a word is not in the dictionary, does that mean it isn't a real word?</strong><br>
+      One of the areas in English that changes the most is vocabulary. New words are often created to describe new inventions or changes in our world. Because of limits on time, money, and staff, it is impossible for any dictionary to include every single word in the language.</li>
+    </ul>
+
+    <button id="goToHomeFromHelp">Back to Home</button>
+  </div>
+
+  <script>
+    document.getElementById('goToHomeFromHelp')?.addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+  <script src="js/viewSwitcher.js"></script>
+</body>
+</html>
+

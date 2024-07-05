@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word of the Day</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #EBDEF0;
+    }
+  
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    button {
+      display: block;
+      margin: 0 auto; 
+      width: auto; 
+    }
+  
+    footer {
+      background-color: #D7BDE2;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto; /* Push footer to the bottom */
+      width: 100%;
+    }
+    #wotd-container {
+      text-align: center; /* Center text horizontally */
+      margin-top: 20px; /* Adjust top margin as needed */
+      padding: 0 20px; /* Add padding to create gap with edges */
+      max-width: 100%; /* Ensure content doesn't exceed viewport width */
+      box-sizing: border-box; /* Include padding in the width calculation */
+    }
+  </style>
+</head>
+<body> 
+  <h1><img src="book2.png" alt="Book Image" style="width: 50px; vertical-align: middle;"> Word  Of The Day <img src="book2.png" alt="Book Image" style="width: 50px; vertical-align: middle;"></h1><br>
+  <div id="wotd-container">
+    <p id="wotd-date"></p>
+    <p id="wotd-word">Loading...</p>
+    <p id="wotd-definition">Loading...</p>
+    <audio id="wotd-audio" controls style="display: none;"></audio> <br>
+    <button id="editWotd">Edit</button> <br>
+    <button id="deleteWotd">Delete</button> <br>
+  </div>  
+  <br>
+  <div id="edit-container" style="display:none;">
+    <input type="text" id="editWord" placeholder="Enter new word">
+    <textarea id="editDefinition" placeholder="Enter new definition"></textarea>
+    <button id="saveWotd">Save</button>
+  </div>
+  <br>
+  <button id="goToHomeFromWotd">Back to Home</button>
+  <script>
+    document.getElementById('goToHomeFromWotd').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+  <script src="js/wotd.js"></script>
+  <script src="js/viewSwitcher.js"></script>
+  <script src="js/dictionary.js"></script>
+  <script src="js/crud.js"></script>
+  
+
+  <footer>
+    <div>
+      <a href="#">Help</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+    </div>
+    <br>
+    <p>&copy; 2024 WordHaven Dictionary. All rights reserved.</p>
+  </footer>
+</body>
+</html>

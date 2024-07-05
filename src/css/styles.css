@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  input {
+    margin: 5px;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  .entry {
+    margin-top: 10px;
+  }
+  
+  #entries .entry button {
+    margin-right: 5px;
+  }
+  
+  #entries .entry {
+    margin-bottom: 10px;
+  }
+  

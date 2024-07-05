@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word of the Year</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Add any additional styles here */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #EBDEF0;
+      text-align: center;
+    }
+ 
+    .word-container {
+      background-color: #D7BDE2;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .word-container h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .word-container p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .buttons button {
+      padding: 10px 20px; 
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .buttons button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="word-container">
+    <h2 id="wordOfTheYear">Word of the Year: <span id="word"></span></h2>
+    <div id="definition"></div>
+  </div>
+  <div class="buttons">
+    <button id="getDefinition">Get Definition</button>
+    <button id="backToHome">Back to Home</button>
+  </div>
+
+  <script src="js/wordOfTheYear.js"></script>
+</body>
+</html>

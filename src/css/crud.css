@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #c0392b;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#entries {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.entry {
+  padding: 10px;
+  border: 1px solid #c0392b;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entry button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}

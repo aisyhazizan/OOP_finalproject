@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #EBDEF0;
+    }
+   
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+   
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer { 
+      background-color: #D7BDE2;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto; /* Push footer to the bottom */
+      width: 100%;
+    }
+  </style>
+</head>
+ 
+<body>
+  <h1><img src="book2.png" alt="Book Image" style="width: 50px; vertical-align: middle;"> WordHaven Dictionary <img src="book2.png" alt="Book Image" style="width: 50px; vertical-align: middle;"></h1><br>
+  <input type="text" id="newEntry" placeholder="Add a new word">
+  <button id="addEntry">Submit</button>
+  <div id="entries"></div>
+  <button id="goToHomeFromCrud">Back to Home</button>
+  <script>
+    document.getElementById('goToHomeFromCrud').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+  <script src="js/viewSwitcher.js"></script>
+  <script src="js/crud.js"></script>
+
+  <footer>
+    <div>
+      <a href="#">Help</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+    </div>
+    <br>
+    <p>&copy; 2024 WordHaven Dictionary. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0; 
+      padding: 0;
+      background-color: #EBDEF0;
+      font-family: 'Karmina Sans', sans-serif;
+    } 
+   
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    button {
+      display: block;
+      margin: 0 auto;  
+      width: auto; 
+    }
+  
+    footer {
+      background-color: #D7BDE2;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto; 
+      width: 100%;
+    }
+    #result {
+      text-align: justify; 
+      margin-top: 20px; 
+      padding: 0 20px; 
+      max-width: 100%; 
+      box-sizing: border-box;
+      font-family: 'Karmina Sans', sans-serif; 
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+    #result audio {
+      display: block;
+      margin: 20px auto; /* Center the audio element */
+      max-width: 100%;
+    }
+  </style> 
+  
+</head>
+<body> 
+  <h1><img src="book2.png" alt="Book Image" style="width: 50px; vertical-align: middle;"> DICTIONARY <img src="book2.png" alt="Book Image" style="width: 50px; vertical-align: middle;"></h1><br>
+  <p>WordHaven Dictionary</p>
+  <input type="text" id="word_input" placeholder="Enter word">
+  <br><br>
+  <button onclick="buttonClicked()">Enter</button>
+  <div id="result">
+    <p id="displayWord"></p>
+    <p id="displayPhonetic"></p>
+    <p id="definition"></p>
+    <p id="displayExample"></p>
+    <p id="displaySynonyms"></p>
+    <p id="displayAntonyms"></p>
+    <p id="displayAdverbs"></p>
+    <p id="displayAnagrams"></p>
+    <p id="displayOrigin"></p>
+    <p id="displaySyllables"></p>
+    <div id="partsOfSpeech"></div>
+    <audio id="audio" controls style="display: none;"></audio>
+    <div id="relatedURLs"></div>
+  </div>
+  <br>
+  <button id="goToHomeFromDictionary">Back to Home</button> <br>
+  <script>
+    document.getElementById('goToHomeFromDictionary').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+  <script src="js/viewSwitcher.js"></script>
+  <script src="js/dictionary.js"></script>
+
+  <footer>
+    <div>
+      <a href="#">Help</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+    </div>
+    <br>
+    <p>&copy; 2024 WordHaven Dictionary. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+ 

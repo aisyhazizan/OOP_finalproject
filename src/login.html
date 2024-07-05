@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background-color: #EBDEF0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #D7BDE2;
+      padding: 20px;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .container h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #D7BDE2;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto; /* Push footer to the bottom */
+      width: 100%;
+    }
+  </style>
+</head> 
+<body> 
+  <div class="container">
+    <h1>WordHaven Dictionary Login</h1>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button id="login-submit">Login</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 WordHaven Dictionary. All rights reserved.</p>
+  </footer>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
